@@ -12,6 +12,7 @@
                             <div class="form-group">
                                 <label for="username" class="text-body">Nom de la famille:</label><br>
                                 <select class="form-control" id="family-list">
+                                    <option>Sélectionner famille</option>
                                     <option>FAMILLE JUSTICE</option>
                                     <option>FAMILLE RICHESSE</option>
                                     <option>GLORY FAMILY</option>

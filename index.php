@@ -23,7 +23,7 @@
     
     <!-- Section -->
     <section>
-    <?php include 'connexion.php';?>
+    <?php include 'inscription.html';?>
     </section>
 
     <?php include 'footer.php';?>
