@@ -24,3 +24,22 @@
     font-size: 14px;
     background: #5a014e;
   }
+
+  header {
+    color: #b4aca8;
+    font-size: 14px;
+    background: #fcfa88;
+    height: 100px;
+  }
+  nav {
+    color: #b4aca8;
+    font-size: 14px;
+    background: #6289df;
+    height: 50px;
+  }
+  section {
+    color: #b4aca8;
+    font-size: 14px;
+    background: #ffffff;
+    height: 561px;
+  }
