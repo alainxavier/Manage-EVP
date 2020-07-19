@@ -34,5 +34,7 @@
     <script src="popper/popper.js"></script>
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="/jquery_validate/jquery.validate.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
