@@ -1,28 +1,29 @@
 $(document).ready(function(){
     //code  de validation des formulaires
-    $( "#signupForm1" ).validate( {
-        rules: {
-            firstname1: "required",
-            lastname1: "required",
-            username1: {
-                required: true,
-                minlength: 2
-            },
-            password1: {
+    $.validator.methods.password = function( value, element ) {
+        return this.optional( element ) || /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,10}$/.test( value );
+      }
+      
+    $( "#login-form" ).validate( {
+        rules: {            
+            pseudo: {
                 required: true,
                 minlength: 5
             },
-            confirm_password1: {
+            password: {
+                required: true,
+                minlength: 5
+            },
+            confirm_password: {
                 required: true,
                 minlength: 5,
-                equalTo: "#password1"
+                equalTo: "#password"
             },
-            email1: {
-                required: true,
-                email: true
+            family_list: {
+                required: true
             },
-            agree1: "required"
-        },
+            //agree1: "required"
+        }/*,
         messages: {
             firstname1: "Please enter your firstname",
             lastname1: "Please enter your lastname",
@@ -49,7 +50,7 @@ $(document).ready(function(){
 
             // Add `has-feedback` class to the parent div.form-group
             // in order to add icons to inputs
-            element.parents( ".col-sm-5" ).addClass( "has-feedback" );
+            element.parents( ".col-sm-12" ).addClass( "has-feedback" );
 
             if ( element.prop( "type" ) === "checkbox" ) {
                 error.insertAfter( element.parent( "label" ) );
@@ -69,12 +70,12 @@ $(document).ready(function(){
             }
         },
         highlight: function ( element, errorClass, validClass ) {
-            $( element ).parents( ".col-sm-5" ).addClass( "has-error" ).removeClass( "has-success" );
+            $( element ).parents( ".champ" ).addClass( "has-error" ).removeClass( "has-success" );
             $( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
         },
         unhighlight: function ( element, errorClass, validClass ) {
-            $( element ).parents( ".col-sm-5" ).addClass( "has-success" ).removeClass( "has-error" );
+            $( element ).parents( ".champ" ).addClass( "has-success" ).removeClass( "has-error" );
             $( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
-        }
+        }*/
     } );  
   });

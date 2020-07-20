@@ -1,44 +1,45 @@
 
-      <div class="container mt-3">
-        <div id="login">            
-            <div id="login-row" class="row justify-content-center align-items-center mb-3">
-                <div id="login-column" class="col-md-6">                    
-                    <div id="login-box" class="col-md-12">
-                        <div class="text-center">
-                            <img src="images/logo_evp.png" class="img-fluid" alt="Responsive image" width="100px">
-                        </div>
-                        <form id="login-form" class="form" action="" method="post">
-                            <h3 class="text-center text-success">Inscription</h3>
-                            <div class="form-group">
-                                <label for="pseudo" class="text-body">Nom de connexion:</label><br>
-                                <input type="text" name="pseudo" id="pseudo" class="form-control" title="Veuillez saisir au moins 6 caractères." minlength="6" required autofocus>
-                            </div>
-                            <div class="form-group">
-                                <label for="password" class="text-body">Créer votre mot de passe:</label><br>
-                                <input type="password" name="password" id="password" class="form-control" minlength="6" title="Veuillez saisir au moins 6 caractères (lettres ou chiffres ou symboles)." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="confirm_password" class="text-body">Confirmer votre mot de passe:</label><br>
-                                <input type="password" name="confirm_password" id="confirm_password" class="form-control" title="Les mots de pas sont différents." required>
-                            </div>
-                            <div class="form-group">
-                                <label for="family-list" class="text-body">Nom de la famille:</label><br>
-                                <select class="form-control" id="family-list" title="Veuillez saisir au moins 6 caractères."  required>
-                                    <option></option>
-                                    <option>GLORY FAMILY</option>
-                                    <option>FAMILLE JUSTICE</option>
-                                    <option>FAMILLE MISERICORDE</option>
-                                    <option>FAMILLE PAIX</option>
-                                    <option>FAMILLE RICHESSE</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="remember-me" class="text-body"><span><input id="remember-me" name="remember-me" type="checkbox"></span> <span>Restez connecté</span></label><br>
-                                <input type="submit" name="submit" class="btn btn-info btn-md" value="S'inscrire">
-                            </div>
-                        </form>
+<div class="container mt-3">
+    <div id="login">            
+        <div id="login-row" class="row justify-content-center align-items-center mb-3">
+            <div id="login-column" class="col-md-6">                    
+                <div id="login-box" class="col-md-12">
+                    <div class="text-center">
+                        <img src="images/logo_evp.png" class="img-fluid" alt="Responsive image" width="100px">
                     </div>
+                    <form id="login-form" class="form" action="" method="post">
+                        <h3 class="text-center text-success">Inscription</h3>
+                        <div class="form-group">
+                            <label for="pseudo" class="text-body">Nom de connexion:</label><br>
+                            <input type="text" name="pseudo" id="pseudo" class="form-control" title="Veuillez saisir au moins 5 caractères." minlength="5" required autofocus>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-body">Créer votre mot de passe:</label><br>
+                            <input type="password" name="password" id="password" class="form-control" minlength="5" title="Veuillez saisir au moins 5 caractères (lettres majuscules et minuscules, chiffres)." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password" class="text-body">Confirmer votre mot de passe:</label><br>
+                            <input type="password" name="confirm_password" id="confirm_password" class="form-control" title="Les mots de passe sont différents." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="family_list" class="text-body">Nom de la famille:</label><br>
+                            <select class="form-control" id="family_list" title="Veuillez sélectionner la famille."  required>
+                                <option></option>
+                                <option>GLORY FAMILY</option>
+                                <option>FAMILLE JUSTICE</option>
+                                <option>FAMILLE MISERICORDE</option>
+                                <option>FAMILLE PAIX</option>
+                                <option>FAMILLE RICHESSE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="remember-me" class="text-body"><span><input id="remember-me" name="remember-me" type="checkbox"></span> <span>Restez connecté</span></label><br>
+                            <input type="submit" name="submit" class="btn btn-info btn-md" value="S'inscrire">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-      </div>
+    </div>
+</div>
